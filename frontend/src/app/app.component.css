@@ -1,0 +1,31 @@
+.app-toolbar {
+  background-color: var(--primary-color);
+}
+
+.white-text-color{
+  color: ghostwhite;
+}
+
+.app-drawer-container {
+  height: 100%;
+}
+
+.app-light-bulb-icon {
+  width: 32px;
+  margin-left: 5px;
+}
+
+.app-drawer {
+  background-color: var(--primary-color);
+  width: 200px;
+  border-radius: unset;
+}
+
+.app-active-link {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+.app-drawer-content {
+  background-color: ghostwhite;
+  padding: 28px;
+}

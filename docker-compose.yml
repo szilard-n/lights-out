@@ -1,0 +1,24 @@
+services:
+  postgres:
+    image: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - ~/apps/postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD=p0stgres
+      - POSTGRES_USER=p0stgres
+      - POSTGRES_DB=lights_out_db
+  backend:
+    build:
+      context: ./backend
+      dockerfile: src/main/docker/Dockerfile.jvm
+    ports:
+      - 8080:8080
+    environment:
+      - BD_KIND=postgres
+      - DB_USER=p0stgres
+      - DB_PASSWORD=p0stgres
+      - DB_URL=jdbc:postgresql://postgres:5432/lights_out_db
+    depends_on:
+      - postgres

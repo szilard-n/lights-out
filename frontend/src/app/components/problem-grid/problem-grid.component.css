@@ -1,0 +1,31 @@
+.grid-container {
+  display: inline-block;
+  border: 1px solid var(--primary-color);
+}
+
+.grid-row {
+  display: flex;
+}
+
+.grid-cell {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #C0C0C0;
+  margin: 1px;
+}
+
+.grid-cell.active {
+  background-color: var(--accent-color);
+}
+
+.grid-solution-dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: mediumpurple;
+  font-size: 38px;
+}

@@ -1,0 +1,282 @@
+problem:
+  # Problem 1
+  - id: 3c7937f5-7917-4c85-8a4b-878865df07fd
+    grid: "[[0,1,0,0],[1,0,1,0],[1,0,0,1],[0,0,0,0]]"
+    size: 4
+  # Problem 2
+  - id: fa163c58-848d-4e66-a7ac-d1def03cd39b
+    grid: "[[0,1,0],[1,0,1],[1,1,1]]"
+    size: 3
+  # Problem 3
+  - id: 92d002ad-87b1-4241-b260-7d2d8c517869
+    grid: "[[0,1,0,0,1,0,0],[1,0,1,1,0,1,0],[1,1,1,1,1,1,0],[0,1,0,0,1,0,0],[1,0,1,1,0,1,0],[0,1,0,0,1,0,0],[0,1,0,0,1,0,0]]"
+    size: 7
+  # Problem 4
+  - id: 3ab40698-8f08-44e5-a646-92497ae3ba7e
+    grid: "[[0,0,1,0,0],[0,1,0,0,0],[0,0,0,1,1],[1,0,1,0,0],[1,0,0,1,0]]"
+    size: 5
+
+solution:
+  # Problem 1
+  - id: 7ccfa50a-eecb-49f4-9689-e99a3a784491
+    problem_id: 3c7937f5-7917-4c85-8a4b-878865df07fd
+  # Problem 2
+  - id: 92cf1ece-1974-476f-9894-6461f707b648
+    problem_id: fa163c58-848d-4e66-a7ac-d1def03cd39b
+    # Problem 3
+  - id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    problem_id: 92d002ad-87b1-4241-b260-7d2d8c517869
+    # Problem 4
+  - id: c3ff925c-7f05-4399-8af8-63dee6246a04
+    problem_id: 3ab40698-8f08-44e5-a646-92497ae3ba7e
+
+solution_step:
+  # Problem 1
+  - id: f3d992bb-a3f0-47e0-ba12-f15b543cb5e9
+    solution_id: 7ccfa50a-eecb-49f4-9689-e99a3a784491
+    index: 0
+    row: 0
+    col: 1
+  - id: 1fb9a0b0-a52d-49b7-9d15-bee2867f600a
+    solution_id: 7ccfa50a-eecb-49f4-9689-e99a3a784491
+    index: 1
+    row: 0
+    col: 3
+  - id: a1ba03f5-0acf-4a76-a5d9-03690ebebd90
+    solution_id: 7ccfa50a-eecb-49f4-9689-e99a3a784491
+    index: 2
+    row: 1
+    col: 0
+  - id: 7e43ef0f-218c-46cd-b24b-623bf8de209d
+    solution_id: 7ccfa50a-eecb-49f4-9689-e99a3a784491
+    index: 3
+    row: 1
+    col: 3
+  # Problem 2
+  - id: 6fac8863-967c-4d43-b66e-4c4f764f7b0e
+    solution_id: 92cf1ece-1974-476f-9894-6461f707b648
+    index: 0
+    row: 0
+    col: 0
+  - id: e2eb9aee-7bee-41b5-b0f6-4eaab4b5bdf4
+    solution_id: 92cf1ece-1974-476f-9894-6461f707b648
+    index: 1
+    row: 0
+    col: 1
+  - id: f580ff2c-700c-476a-af40-418c1235dc36
+    solution_id: 92cf1ece-1974-476f-9894-6461f707b648
+    index: 2
+    row: 0
+    col: 2
+  - id: 6cf9899c-f3d4-4d2d-9284-4127777d5b02
+    solution_id: 92cf1ece-1974-476f-9894-6461f707b648
+    index: 3
+    row: 2
+    col: 1
+  # Problem 3
+  - id: 487a4ec5-8193-406b-8b26-0d98c45a0559
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 0
+    row: 0
+    col: 0
+  - id: 598acabc-5ec4-43d6-b676-988ee3f58182
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 1
+    row: 0
+    col: 2
+  - id: abc48988-61b3-40c5-9f8c-986ba2649a68
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 2
+    row: 0
+    col: 5
+  - id: 92bccd72-3bc6-4aa2-b901-c457f101cc1c
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 3
+    row: 0
+    col: 6
+  - id: 5207ce33-a34a-4058-9edb-102faca40f2c
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 4
+    row: 1
+    col: 0
+  - id: 770b8fbe-d3f0-4a4a-a748-82e1d280122c
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 5
+    row: 1
+    col: 1
+  - id: e4ec6852-77a8-48c9-9312-ef3265f040f7
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 6
+    row: 1
+    col: 2
+  - id: 8136ebc4-d8b3-4d91-8f3b-d4ea89bdca75
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 7
+    row: 1
+    col: 3
+  - id: 5eb9192d-f492-415b-a0b3-284f4e64a010
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 8
+    row: 2
+    col: 1
+  - id: 0946925f-6ee5-4dac-a46e-3440a249854b
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 9
+    row: 2
+    col: 2
+  - id: 75832a28-5b99-47b4-857d-ecab43c2fcf3
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 10
+    row: 2
+    col: 3
+  - id: 6d775f16-1acd-467f-ae63-b8705fac1aee
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 11
+    row: 2
+    col: 4
+  - id: ccca5a74-9931-47db-a777-951445eeb895
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 12
+    row: 2
+    col: 6
+  - id: 199cfe4a-0eb0-4778-a531-e1b883d85df3
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 13
+    row: 3
+    col: 0
+  - id: eb08a450-4547-453b-9985-e692493daab2
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 14
+    row: 3
+    col: 2
+  - id: 85c1516a-c100-4e38-ad7a-3ca6639e791f
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 15
+    row: 3
+    col: 3
+  - id: 58086f49-7a43-43a5-91d4-5a2670351c45
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 16
+    row: 3
+    col: 4
+  - id: a3f2bddb-236e-4f00-9eb7-676c9979171b
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 17
+    row: 3
+    col: 5
+  - id: 998168fa-4788-458f-9562-0c9619ed93a4
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 18
+    row: 3
+    col: 6
+  - id: 91ff80dc-8ecc-409d-8b24-4da79a5bfae8
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 19
+    row: 4
+    col: 0
+  - id: 34ef36d6-b113-473d-8e22-b4edab8d8436
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 20
+    row: 4
+    col: 2
+  - id: f74fe11a-216a-4d62-980c-a5f39d036ecc
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 21
+    row: 4
+    col: 4
+  - id: 86c7e98b-7f70-4aa0-aea2-3566494434ed
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 22
+    row: 4
+    col: 5
+  - id: 332d5f98-d725-4372-8d9c-6e55e9c2dcda
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 23
+    row: 4
+    col: 6
+  - id: 1e452c1d-834e-4a98-8337-f4ec61d55592
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 24
+    row: 5
+    col: 0
+  - id: 0c22e337-4de9-40f3-a36f-aed19bbe45af
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 25
+    row: 5
+    col: 2
+  - id: 9cb6f1b9-c223-44ce-91ba-d3e6d6dda0f0
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 26
+    row: 5
+    col: 4
+  - id: 8440e797-b650-468a-b132-9509eb7e0276
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 27
+    row: 5
+    col: 5
+  - id: bb62c2ef-b48a-4d81-b4f1-7051e17c4ccf
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 28
+    row: 5
+    col: 6
+  - id: a27f41d2-3d7b-491c-9847-67ccf3de0caa
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 29
+    row: 6
+    col: 1
+  - id: 808962ab-b45d-4994-9d60-6c34f2fc4b3e
+    solution_id: eaf6a504-d1f2-465b-ae6c-8e03ac2df493
+    index: 30
+    row: 6
+    col: 6
+  # Problem 4
+  - id: 7ed84dad-afc3-4c3a-ba4c-db30d65519ce
+    solution_id: c3ff925c-7f05-4399-8af8-63dee6246a04
+    index: 0
+    row: 0
+    col: 0
+  - id: d641dfa3-c825-499f-b8ac-b25ce54afb7e
+    solution_id: c3ff925c-7f05-4399-8af8-63dee6246a04
+    index: 1
+    row: 0
+    col: 1
+  - id: 0a8b07f4-cac2-4c26-be97-6549bad463dd
+    solution_id: c3ff925c-7f05-4399-8af8-63dee6246a04
+    index: 2
+    row: 0
+    col: 3
+  - id: 20bca645-ceb4-45a8-a2af-2446247a9082
+    solution_id: c3ff925c-7f05-4399-8af8-63dee6246a04
+    index: 3
+    row: 1
+    col: 2
+  - id: 5436a450-89cb-4a7f-8c85-f3ced603f901
+    solution_id: c3ff925c-7f05-4399-8af8-63dee6246a04
+    index: 4
+    row: 1
+    col: 3
+  - id: ba2270dc-6a7a-46e5-abaf-25c829317176
+    solution_id: c3ff925c-7f05-4399-8af8-63dee6246a04
+    index: 5
+    row: 1
+    col: 4
+  - id: 9eccd9b0-9c09-43d6-bedc-979c8f062c33
+    solution_id: c3ff925c-7f05-4399-8af8-63dee6246a04
+    index: 6
+    row: 2
+    col: 0
+  - id: d00a0706-2251-467c-abd6-d6e6acb1c1d6
+    solution_id: c3ff925c-7f05-4399-8af8-63dee6246a04
+    index: 7
+    row: 2
+    col: 1
+  - id: e346bad2-1843-4568-afb4-6b75b894726a
+    solution_id: c3ff925c-7f05-4399-8af8-63dee6246a04
+    index: 8
+    row: 4
+    col: 1
+  - id: 93b7e770-7c7d-486f-b44b-b53565187c60
+    solution_id: c3ff925c-7f05-4399-8af8-63dee6246a04
+    index: 9
+    row: 4
+    col: 2

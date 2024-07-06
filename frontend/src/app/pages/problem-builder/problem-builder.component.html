@@ -1,0 +1,17 @@
+<div class="builder-container">
+  <div class="builder-form-container">
+    <mat-form-field>
+      <mat-label>Grid size</mat-label>
+      <mat-select [(ngModel)]="selectedSize" (selectionChange)="onGridSizeChange()" required>
+        <mat-option *ngFor="let gridSize of gridSizes" [value]="gridSize.size">{{gridSize.label}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <div class="builder-actions">
+      <button mat-flat-button class="color-accent" (click)="createEmptyGrid()">Reset</button>
+      <button mat-flat-button class="color-accent" (click)="submitProblem()">Submit</button>
+    </div>
+  </div>
+
+  <app-problem-grid [isNew]="true" [problem]="problem" [isEditable]="true" />
+</div>

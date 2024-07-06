@@ -1,0 +1,21 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; overflow: hidden; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+:root {
+  --primary-color: #191C1C;
+  --accent-color: #FFCE3B;
+}
+
+.color-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.color-accent {
+  background-color: var(--accent-color) !important;
+}
+
+.color-white {
+  color: ghostwhite !important;
+}

@@ -1,0 +1,11 @@
+<div class="grid-container">
+  <div *ngFor="let row of problem.grid; let rowIndex = index" class="grid-row">
+    <div *ngFor="let cell of row; let colIndex = index"
+         class="grid-cell"
+         [class.active]="cell === 1"
+         (click)="toggleCellLights(rowIndex, colIndex)">
+      <span *ngIf="showSolution && isSolutionCell(rowIndex, colIndex)"
+            class="grid-solution-dot">•</span>
+    </div>
+  </div>
+</div>

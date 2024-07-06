@@ -1,0 +1,12 @@
+.builder-container {
+  display: flex;
+}
+
+.builder-form-container {
+  margin-right: 28px;
+}
+
+.builder-actions {
+  display: flex;
+  justify-content: space-between;
+}

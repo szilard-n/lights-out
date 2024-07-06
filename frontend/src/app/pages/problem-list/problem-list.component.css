@@ -1,0 +1,60 @@
+.problem-list-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.problem-list-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+}
+
+.problem-list-scrollable-content {
+  text-align: center;
+  overflow-y: auto;
+}
+
+mat-paginator {
+  margin-bottom: 20px;
+}
+
+mat-divider {
+  margin: 10px 0;
+}
+
+button {
+  width: 200px;
+}
+
+.problem-list-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.problem-list-spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+.problem-solver {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.problem-solver-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
