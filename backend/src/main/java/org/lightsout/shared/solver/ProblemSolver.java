@@ -19,7 +19,7 @@ public class ProblemSolver {
     private static final int[] dc = {0, 1, 0, 0, -1};
 
     /**
-     * Solves the Lights Out puzzle using Linear Algebra approach.
+     * Solves the Lights Out puzzle using a Linear Algebra approach.
      *
      * @param initialGrid The initial state of the grid.
      * @param problemId   The ID of the problem.
@@ -44,10 +44,17 @@ public class ProblemSolver {
         return Optional.of(createSolution(moves));
     }
 
+    /**
+     * Builds the augmented matrix representing the system of linear equations for the Lights Out puzzle.
+     *
+     * @param initialGrid The initial state of the grid.
+     * @param gridSize    The size of the grid.
+     * @param totalLights The total number of lights in the grid.
+     * @return The augmented matrix.
+     */
     private static int[][] buildAugmentedMatrix(List<List<Byte>> initialGrid, int gridSize, int totalLights) {
         int[][] augmentedMatrix = new int[totalLights][totalLights + 1];
 
-        // Fill the coefficient matrix and constants vector
         for (int row = 0; row < gridSize; row++) {
             for (int col = 0; col < gridSize; col++) {
                 int index = row * gridSize + col;
@@ -66,11 +73,24 @@ public class ProblemSolver {
         return augmentedMatrix;
     }
 
+    /**
+     * Solves the augmented matrix using Gaussian Elimination.
+     *
+     * @param matrix The augmented matrix.
+     * @param size   The size of the matrix.
+     * @return True if a solution exists, otherwise false.
+     */
     private static boolean solveGaussianElimination(int[][] matrix, int size) {
         forwardElimination(matrix, size);
         return backSubstitution(matrix, size);
     }
 
+    /**
+     * Performs forward elimination to convert the matrix into an upper triangular form.
+     *
+     * @param matrix The augmented matrix.
+     * @param size   The size of the matrix.
+     */
     private static void forwardElimination(int[][] matrix, int size) {
         for (int i = 0; i < size; i++) {
             log.debug("Processing row {} of {}", i + 1, size);
@@ -83,6 +103,14 @@ public class ProblemSolver {
         }
     }
 
+    /**
+     * Finds the pivot row for the current column.
+     *
+     * @param matrix     The augmented matrix.
+     * @param size       The size of the matrix.
+     * @param currentRow The current row index.
+     * @return The pivot row index.
+     */
     private static int findPivotRow(int[][] matrix, int size, int currentRow) {
         int pivot = currentRow;
         for (int j = currentRow + 1; j < size; j++) {
@@ -93,6 +121,13 @@ public class ProblemSolver {
         return pivot;
     }
 
+    /**
+     * Swaps two rows in the matrix.
+     *
+     * @param matrix The augmented matrix.
+     * @param row1   The first row index.
+     * @param row2   The second row index.
+     */
     private static void swapRows(int[][] matrix, int row1, int row2) {
         if (row1 != row2) {
             int[] tempRow = matrix[row1];
@@ -101,6 +136,13 @@ public class ProblemSolver {
         }
     }
 
+    /**
+     * Eliminates the entries below the pivot row to create an upper triangular matrix.
+     *
+     * @param matrix     The augmented matrix.
+     * @param size       The size of the matrix.
+     * @param currentRow The current row index.
+     */
     private static void eliminateBelow(int[][] matrix, int size, int currentRow) {
         for (int j = currentRow + 1; j < size; j++) {
             if (matrix[j][currentRow] == 1) {
@@ -111,6 +153,13 @@ public class ProblemSolver {
         }
     }
 
+    /**
+     * Performs back substitution to solve the upper triangular matrix.
+     *
+     * @param matrix The augmented matrix.
+     * @param size   The size of the matrix.
+     * @return True if a solution exists, otherwise false.
+     */
     private static boolean backSubstitution(int[][] matrix, int size) {
         for (int i = size - 1; i >= 0; i--) {
             if (matrix[i][i] == 0 && matrix[i][size] == 1) {
@@ -123,6 +172,14 @@ public class ProblemSolver {
         return true;
     }
 
+    /**
+     * Extracts the solution moves from the solved augmented matrix.
+     *
+     * @param matrix     The augmented matrix.
+     * @param totalLights The total number of lights in the grid.
+     * @param gridSize   The size of the grid.
+     * @return A list of moves needed to solve the puzzle.
+     */
     private static List<int[]> extractSolutionMoves(int[][] matrix, int totalLights, int gridSize) {
         List<int[]> moves = new ArrayList<>();
         for (int i = 0; i < totalLights; i++) {
